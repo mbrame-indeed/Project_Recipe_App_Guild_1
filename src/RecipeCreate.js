@@ -37,15 +37,7 @@ function RecipeCreate({ createRecipe }) {
     <form name="create" onSubmit={handleSubmit}>
       <table id="input-table">
       <thead>
-          <tr>
-            <th>Name</th>
-            <th>Cuisine</th>
-            <th>Photo</th>
-            <th>Ingredients</th>
-            <th>Preparation</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
+      </thead>
         <tbody>
           <tr>
             <td>
@@ -54,6 +46,7 @@ function RecipeCreate({ createRecipe }) {
                 type="text"
                 name="name"
                 placeholder="Name"
+                required="true"
                 onChange={handleNameChange}
               />
             </td>
@@ -63,6 +56,7 @@ function RecipeCreate({ createRecipe }) {
                 type="text"
                 name="cuisine"
                 placeholder="Cuisine"
+                required="true"
                 onChange={handleCuisineChange}
               />
             </td>
@@ -80,6 +74,7 @@ function RecipeCreate({ createRecipe }) {
                 id="ingredients"
                 name="ingredients"
                 placeholder="Ingredients"
+                required="true"
                 onChange={handleIngredientChange}
               />
             </td>
@@ -88,6 +83,7 @@ function RecipeCreate({ createRecipe }) {
                 id="preparation"
                 name="preparation"
                 placeholder="Preparation"
+                required="true"
                 onChange={handlePreparationChange}
               />
             </td>
